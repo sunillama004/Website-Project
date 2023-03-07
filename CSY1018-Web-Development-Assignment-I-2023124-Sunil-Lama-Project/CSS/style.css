@@ -1,0 +1,237 @@
+/* CSS reset default */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Logo and image of Navigation Bar*/
+
+
+#logo img {
+    height: 100px;
+    margin: 0 20px;
+    border-radius: 50px;
+    margin-top: 5px;
+
+}
+
+/* Variable section */
+
+
+
+/* List styling of Navigation Bar */
+#nav-head {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+#nav-head::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#nav-head ul {
+    display: flex;
+
+}
+
+
+#nav-head ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+
+}
+
+#nav-head ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#nav-head ul li a:hover {
+    color: rgb(9, 8, 8);
+    background-color: #81ecec;
+
+}
+
+/* Content Section */
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+}
+
+#content::before {
+    content: "";
+    background: url(../image/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    height: 860px;
+    width: 100%;
+    z-index: -2;
+    opacity: 1;
+}
+
+
+/* Content or other text styles */
+
+.active {
+
+    background: linear-gradient(1deg, #9aacac, black);
+}
+
+.content-text {
+
+    width: auto;
+    height: 0vh;
+    margin: -73px;
+}
+
+
+/* big font */
+.title-big {
+    color: greenyellow;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+
+.para-big {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* small font */
+.title-small {
+    color: black;
+    text-align: center;
+    font-size: 2.1rem;
+    padding: 12px;
+
+}
+
+.para-small {
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+/* Hobby section */
+.container-hobby {
+    margin-top: 165px;
+}
+
+.title-cont {
+    margin-bottom: 22px;
+
+
+}
+
+#hobby {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 98%;
+    margin: auto;
+}
+
+#hobby .box {
+    border: 2px solid black;
+    width: 350px;
+    height: 410px;
+    box-sizing: border-box;
+    border-radius: 23px;
+    background-color: #f4f4f4;
+    margin: 10px;
+
+}
+
+.box .img {
+    width: 100%;
+    height: 255px;
+    display: block;
+    margin: auto;
+    border-top-right-radius: 23px;
+    border-top-left-radius: 23px;
+
+}
+
+
+
+
+/* footer section
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: bisque;
+    height: 50px;
+    padding: 0;
+    width: 95%;
+} */
+
+
+
+
+@media only screen and (max-width:810px) {
+
+    #logo {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .content-text {
+        width: auto;
+        height: 58vh;
+        margin: -39%;
+    }
+
+    #content::before {
+        height: 124vh;
+        width: 100%;
+    }
+
+    .container-hobby {
+        margin-top: 30vh;
+    }
+
+    .title-big {
+        font-size: 2.5rem;
+        padding: 71px 105px;
+        display: flex;
+        margin-left: -24%;
+        margin-right: -21%;
+    }
+
+}
