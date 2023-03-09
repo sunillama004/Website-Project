@@ -1,52 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    background: url(/image/bg3.jpg); 
+    color: white;
 }
 
-.grid{
+
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(315px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
 }
 
-.about-title{
+.about-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.6rem;
 }
 
-.about-subtitle{
+.about-subtitle {
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.about-para{
-    width: 90%;
-    border: 1px solid;
+.about-para {
+    width: 100%;
+    border: 2px solid #a09292;
+    border-radius: 9px;
     margin: auto;
 }
 
-.about-container{
+.about-container {
     justify-content: center;
     align-items: center;
     width: 60%;
-    border: 1px solid;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 3rem;
 }
-.about-img{
+
+.about-img {
     width: 253px;
     border-radius: .5rem;
     justify-self: center;
-    align-content: center;
 }
 
-.about-intro{
+.about-intro {
     text-align: center;
     margin: 2rem;
+    font-size: 1.05rem;
 
 }
 
-.about-info{
+.about-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -54,11 +59,12 @@
     padding: 18px;
 }
 
-.about-info-name{
+.about-info-name {
     font-size: 1rem;
 
 }
-.about-info-title{
+
+.about-info-title {
     font-size: 1.5rem;
     text-align: center;
     font-weight: 700;
@@ -66,35 +72,34 @@
 }
 
 /* Download CV section */
-.download-btn{
+.download-cv {
+    width: 88%;
+    margin: auto;
+}
+
+.download-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: 700;
-    background: linear-gradient(to right, #70abe2,#24A2FF);
+    background: linear-gradient(to right, #70abe2, #24A2FF);
     font-size: 20px;
     border: 0;
     width: 185px;
     height: 43px;
     border-radius: 25px;
     cursor: pointer;
-     margin: auto;
+    margin: auto;
 }
 
-.download-cv a{
- text-decoration: none;
+.download-cv a {
+    text-decoration: none;
 }
 
 .download-cv a .icn {
     width: 20px;
     height: 24px;
-    line-height: 46px;
-    font-size: 56px;
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-    margin-right: 15px cursor: pointer;
-    text-align: center;
     margin-left: 8px;
 }
 
@@ -115,15 +120,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid;
     width: 98%;
     margin: auto;
 }
 
 #port .box {
-    border: 2px solid black;
+    
     width: 350px;
-    height: 410px;
+    height: 441px;
     box-sizing: border-box;
     border-radius: 23px;
     background-color: #f4f4f4;
@@ -142,8 +146,15 @@
 }
 
 /* small font */
+.project-title{
+    text-align: center;
+    font-size: 2.1rem;
+    padding: 12px;
+
+}
 .title-port {
     color: black;
+    background: white;
     text-align: center;
     font-size: 2.1rem;
     padding: 12px;
@@ -152,7 +163,10 @@
 
 .para-port {
     color: black;
+    background: white;
     text-align: center;
-    font-size: 1.2rem;
-
+    font-size: 1.4rem;
+    padding: 11px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
 }

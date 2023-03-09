@@ -2,13 +2,23 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* smooth scroll */
+html {
+    scroll-behavior: smooth;
 }
 
 
 /* Logo and image of Navigation Bar*/
+#nav-logo{
+    width: 14%;
+    margin: auto;
+}
 
 
-#logo img {
+#nav-logo img {
     height: 100px;
     margin: 0 20px;
     border-radius: 50px;
@@ -16,18 +26,12 @@
 
 }
 
-/* Variable section */
-
-
-
 /* List styling of Navigation Bar */
 #nav-head {
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
-    flex-wrap: wrap;
-
 
 }
 
@@ -46,38 +50,52 @@
 
 #nav-head ul {
     display: flex;
-
+    justify-content: center;
+    width: 100%;
 }
 
 
 #nav-head ul li {
+    display: inline-block;
     list-style: none;
     font-size: 1.3rem;
+    line-height: 80px;
+    margin: 0 5px;
 
 
 }
 
 #nav-head ul li a {
     color: white;
-    display: block;
+    /* display: block; */
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
 
 }
 
-#nav-head ul li a:hover {
+#nav-head ul li a:hover,
+a.active {
     color: rgb(9, 8, 8);
-    background-color: #81ecec;
+    background: linear-gradient(1deg, #9aacac, black);
 
+}
+
+/* checkbox section for hamburger */
+#checkbox {
+    display: none;
+}
+
+.ham-img {
+    display: none;
 }
 
 /* Content Section */
 #content {
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
-    height: 570px;
+    /* padding: 3px 200px; */
+    height: 86vh;
     justify-content: center;
     align-items: center;
 }
@@ -89,25 +107,24 @@
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
+    top: 0;
     height: 860px;
     width: 100%;
     z-index: -2;
     opacity: 1;
+
 }
 
 
 /* Content or other text styles */
 
-.active {
 
-    background: linear-gradient(1deg, #9aacac, black);
-}
 
 .content-text {
 
     width: auto;
-    height: 0vh;
-    margin: -73px;
+    height: 20vh;
+
 }
 
 
@@ -202,36 +219,142 @@ footer{
 } */
 
 
+/* Meadia query section */
+
+@media only screen and (max-width:880px) {
+    /* checkbox section for hamburger */
+
+    #nav-head {
+        position: sticky;
+        top: 0;
+    }
+
+    #nav-logo {
+        width: 27%;
 
 
+    }
+
+    .ham-img {
+        display: block;
+        margin-top: 0.2vh;
+        margin-left: 15px;
+        width: 35px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    #nav-head ul {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 70vh;
+        background: #2c3e50;
+        top: 109px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    #nav-head ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        background: #2c3e50;
+    }
+
+    #nav-head ul li a {
+        font-size: 20px;
+
+    }
+
+
+    #checkbox:checked~ul {
+        left: 0;
+
+    }
+
+}
+
+@media only screen and (max-width:730px) {
+
+    #nav-logo {
+        width: 32%;
+
+
+    }
+}
+@media only screen and (max-width:550px) {
+
+    #nav-logo {
+        width: 52%;
+
+
+    }
+}
+@media only screen and (max-width:350px) {
+
+    #nav-logo {
+        width: 66%;
+
+
+    }
+}
 @media only screen and (max-width:810px) {
 
-    #logo {
-        margin: auto;
-        margin-bottom: 10px;
-    }
+
+
+
+    /* nav section */
+
+
 
     .content-text {
         width: auto;
         height: 58vh;
-        margin: -39%;
+    
     }
 
     #content::before {
         height: 124vh;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .container-hobby {
-        margin-top: 30vh;
+        margin-top: 7vh;
+
     }
 
     .title-big {
         font-size: 2.5rem;
         padding: 71px 105px;
-        display: flex;
-        margin-left: -24%;
-        margin-right: -21%;
+
+        
+    }
+
+}
+
+@media only screen and (max-width:595px) {
+
+    #content::before {
+    height: 102vh;
+    }
+
+    .content-text {
+        height: 51vh;
+    }
+
+    .title-big {
+        font-size: 2.1rem;
+        padding: 52px 1px;
+   
+        
+    }
+
+    .para-big {
+        font-size: 1.4rem;
+        padding: 0 1px;
+
     }
 
 }
