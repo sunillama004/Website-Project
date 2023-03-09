@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background: url(/image/bg3.jpg); 
+    background: url(../image/bg3.jpg);
     color: white;
 }
 
@@ -125,7 +125,7 @@
 }
 
 #port .box {
-    
+
     width: 350px;
     height: 441px;
     box-sizing: border-box;
@@ -146,12 +146,13 @@
 }
 
 /* small font */
-.project-title{
+.project-title {
     text-align: center;
     font-size: 2.1rem;
     padding: 12px;
 
 }
+
 .title-port {
     color: black;
     background: white;
