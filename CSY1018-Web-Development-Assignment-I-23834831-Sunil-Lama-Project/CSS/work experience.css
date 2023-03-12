@@ -1,0 +1,170 @@
+/*------- CSS reset default -----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------- smooth scroll -----*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*-------- exp-section ---------*/
+
+
+.exp-section{
+
+}
+
+
+.exp-head{
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box-name{
+    border: 1px solid;
+    width: 230px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.box-cont{
+    border: 1px solid;
+    width: 78%;
+    padding: 10px;
+}
+
+/* ------List styles---------- */
+.exp-ul{
+
+font-size: 20px;
+background: none;
+padding: 0 0 0 48px;
+}
+
+.exp-li{
+
+    font-size: 20px;
+    background: none;
+    padding: 9px;
+}
+
+/* -----font style section------- */
+.title-main{
+    font-size: 2rem;
+    margin: 3vh;
+}
+
+.exp-head-title{
+    
+}
+
+.name{
+    font-weight: 550;
+   
+}
+
+.year{
+text-align: center;
+
+}
+
+.exp-head-title{
+
+}
+
+.exp-head-para{
+    color: grey;
+
+}
+
+.hr-80{
+    margin: 5vh;
+}
+
+.mg-top{
+    margin-top: 12vh;
+    margin-bottom: 4vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------- content section -----------*/
+@media only screen and (max-width:1110px) {
+    .box-cont{
+        width: 75%;
+    }
+}
+
+
+@media only screen and (max-width:925px) {
+    .box-cont{
+        width: 71%;
+    }
+}
+@media only screen and (max-width:800px) {
+    .box-cont{
+        width: 96%;
+    }
+    .box-name{
+        width: 80%;
+        margin: auto;
+    }
+
+}
+@media only screen and (max-width:550px) {
+   
+    .box-name{
+        width: 60%
+     
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:455px) {
+    .work-img{
+        height: 248px;
+        width: 267px;
+       
+    }
+    .work-img-head {
+       
+        height: 255px;
+        width: 270px;
+       
+    }
+    .work-content {
+        padding: 0.8rem;
+       width: 100%;
+    }
+
+    .work-container {
+    margin-top: 23%;
+    }
+}

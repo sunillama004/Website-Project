@@ -8,28 +8,50 @@
     <title>Contact</title>
     <link rel="stylesheet" href="./CSS/contact.css">
     <link rel="stylesheet" href="./CSS/style.css">
+
 </head>
 
 <body>
+
+    <header>
+        <nav id="nav-head">
+            <label for="checkbox" class="lb"><img src="./image/icon/hamburger-white.png" class="ham-img"></label>
+            <input type="checkbox" id="checkbox">
+
+            <div id="nav-logo">
+                <h3 class="nav-logo-content">SU<span class="red-span">NIL</span></h3>
+            </div>
+
+            <ul>
+                <li class="menu"><a href="index.html"> Home</a></li>
+                <li class="menu"><a href="portfolio.html"> Portfolio</a></li>
+                <li class="menu"><a class="active" href="contact.html"> Contact</a></li>
+                <li class="menu"><a href="work experience.html"> Work Experience</a></li>
+                <li class="menu"><a href="site report.html"> Site Report</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
     <div class="root-contact">
-        <section id="contact">
+        <div id="contact">
             <h2 class="title-small">Contact Me</h2>
             <div id="cont-form">
-                <form action="">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                <form action="#" method="post">
+                    <label for="name" class="cont-label">Name:</label>
+                    <input class="cont-input" type="text" name="name" id="name" placeholder="Enter your name">
 
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                    <label for="email" class="cont-label">Email:</label>
+                    <input class="cont-input" type="text" name="email" id="email" placeholder="Enter your email">
 
-                    <label for="phone">Phone no:</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter your phone">
+                    <label for="phone" class="cont-label">Phone no:</label>
+                    <input class="cont-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
 
                     <div class="t-area"></div>
-                    <label for="message">Message:</label>
+                    <label for="message" class="cont-label">Message:</label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a message"></textarea>
 
-                    <button class="btn" type="button">Send</button>
+                    <button class="cont-btn" type="button">Send</button>
             </div>
             </form>
 
@@ -51,17 +73,18 @@
 
 
 
-        </section>
-
-
-
-        <div class="foot-margin">
-            <footer class="footer">
-                Copyright &copy; www.myWebpage.com All rights reserved
-            </footer>
         </div>
 
+
+
+
+
     </div>
+
+    <footer class="footer">
+        Copyright &copy; www.myWebpage.com All rights reserved
+    </footer>
+
 </body>
 
 </html>
