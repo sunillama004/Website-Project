@@ -48,9 +48,9 @@
 }
 
 .about-intro {
-    text-align: center;
+    text-align: left;
     margin: 2rem;
-    font-size: 1.05rem;
+    font-size: 1.3rem;
 
 }
 
@@ -171,7 +171,37 @@
     background: white;
     text-align: center;
     font-size: 1.4rem;
-    padding: 11px;
+    padding: 24px;
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
+}
+
+
+/* -------footer----------- */
+.foot-text{
+background: none;
+}
+
+/* ------------Media Query Section----------------- */
+@media only screen and (max-width:1050px) {
+
+.about-intro {
+    text-align: center;
+}
+
+}
+@media only screen and (max-width:338px) {
+
+#port .box {
+    margin-bottom: 20px;
+    height: 435px;
+}
+
+
+
+.para-port {
+padding: 15px;x
+
+}
+
 }

@@ -45,12 +45,12 @@ body{
     padding: 10px;
 }
 
-/* ------Li style section---------- */
+/* ------List styles---------- */
 .exp-ul{
 
 font-size: 20px;
 background: none;
-padding: 0 0 0 48px;
+padding: 0 0 0 10px;
 }
 
 .exp-li{
