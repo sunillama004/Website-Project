@@ -19,11 +19,6 @@ body{
 /*-------- exp-section ---------*/
 
 
-.exp-section{
-
-}
-
-
 .exp-head{
     display: flex;
     flex-wrap: wrap;
@@ -84,9 +79,6 @@ text-align: center;
 
 }
 
-.exp-head-title{
-
-}
 
 .exp-head-para{
     color: grey;
@@ -193,7 +185,7 @@ text-align: center;
 
 /* -------------skill box section---------------- */
 
-@media only screen and (max-width:972px) {
+@media only screen and (max-width:1034px) {
     .box-skill {
     margin: auto;
     }
