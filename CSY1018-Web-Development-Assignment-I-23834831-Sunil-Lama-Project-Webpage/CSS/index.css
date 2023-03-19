@@ -96,6 +96,7 @@ a.active {
 }
 
 /*-------- checkbox section for hamburger ------*/
+/* (CodingNepal,2020) */
 
 #checkbox {
     display: none;
@@ -201,7 +202,7 @@ h1, h2, h3{
 }
 
 /*----------- Hobby section --------------*/
-
+/*  (Coding Power, 2022) */
 .title-cont {
     margin: 12px;
 }
@@ -259,6 +260,7 @@ h1, h2, h3{
 /*----------- Meadia query section --------------*/
 /* checkbox section for hamburger */
 
+/*------ (CodingNepal,2020) -----*/
 @media only screen and (max-width:880px) {
 
 
@@ -418,3 +420,10 @@ h1, h2, h3{
     
     }
 }
+
+
+/* CodingNepal (2020) How to Create Responsive Navigation Bar using HTML and CSS. YouTube[Online]. 
+Available from:https://www.youtube.com/watch?v=oLgtucwjVII [Accessed 12 MAR 2023]. */
+
+ /* Coding Power (2022)  Responsive eCommerce Website Product Cards using Html & CSS | Responsive Product Cards Design. YouTube[Online].  
+Available from:https://www.youtube.com/watch?v=hn9K-WRbn-w[Accessed 13 Mar 2023]. */

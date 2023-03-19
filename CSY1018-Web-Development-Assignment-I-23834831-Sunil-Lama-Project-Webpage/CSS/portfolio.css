@@ -110,6 +110,8 @@
 
 
 /*---------- container-portfolio section ------------*/
+    /* (Coding Power, 2022) */
+
 .container-port {
     margin-top: 6%;
 }
@@ -178,30 +180,40 @@
 
 
 /* -------footer----------- */
-.foot-text{
-background: none;
+.foot-text {
+    background: none;
 }
+
+
 
 /* ------------Media Query Section----------------- */
 @media only screen and (max-width:1050px) {
 
-.about-intro {
-    text-align: center;
-}
+    .about-intro {
+        text-align: center;
+    }
 
 }
+
 @media only screen and (max-width:338px) {
 
-#port .box {
-    margin-bottom: 20px;
-    height: 435px;
+    #port .box {
+        margin-bottom: 20px;
+        height: 435px;
+    }
+
+
+
+    .para-port {
+        padding: 15px;
+    
+    }
+
 }
 
 
+/* CodingNepal (2020) How to Create Responsive Navigation Bar using HTML and CSS. YouTube[Online]. 
+Available from:https://www.youtube.com/watch?v=oLgtucwjVII [Accessed 12 MAR 2023]. */
 
-.para-port {
-padding: 15px;x
-
-}
-
-}
+/* Coding Power (2022)  Responsive eCommerce Website Product Cards using Html & CSS | Responsive Product Cards Design. YouTube[Online].  
+Available from:https://www.youtube.com/watch?v=hn9K-WRbn-w[Accessed 13 Mar 2023]. */
